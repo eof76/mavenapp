@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD//EN"
+	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="connection.driver_class">org.sqlite.JDBC</property>
+		<property name="connection.url">jdbc:sqlite:database.sqlite3</property>
+		<property name="hibernate.dialect">org.sqlite.hibernate.dialect.SQLiteDialect</property>
+		<property name="hibernate.show_sql">true</property>
+		<property name="hibernate.format_sql">true</property>
+		<property name="hibernate.hdm2ddl.auto">update</property>
+		
+		<mapping class="eof76.dal.entities.User"></mapping>
+	</session-factory>
+</hibernate-configuration>
