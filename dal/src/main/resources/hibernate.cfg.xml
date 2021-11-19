@@ -8,7 +8,7 @@
 		<property name="hibernate.dialect">org.sqlite.hibernate.dialect.SQLiteDialect</property>
 		<property name="hibernate.show_sql">true</property>
 		<property name="hibernate.format_sql">true</property>
-		<property name="hibernate.hdm2ddl.auto">update</property>
+		<property name="hibernate.hbm2ddl.auto">update</property>
 		
 		<mapping class="eof76.dal.entities.User"></mapping>
 	</session-factory>
